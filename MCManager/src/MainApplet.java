@@ -2,6 +2,7 @@ import java.applet.Applet;
 
 public class MainApplet extends Applet{
 	private static UserController u;
+        private static GUI g;
 
 	/**
 	 * 
@@ -10,10 +11,16 @@ public class MainApplet extends Applet{
 
 	public static void main(String[] args) {
 		u = new UserController();
+                g = new GUI();
+                g.setVisible(true);
 		
 		// TODO Auto-generated method stub
 
 	}
+        
+        public static UserController getUserController() {
+            return u;
+        }
 	
 
 

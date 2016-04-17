@@ -3,9 +3,9 @@ public class User {
 	private String username;
 	private char[] password;
 	
-	public User(String username, String password) {
+	public User(String username, char[] password) {
 		this.username = username;
-		this.password = password.toCharArray();
+		this.password = password;
 	}
 	
 	public char[] returnPassword() {
@@ -13,7 +13,6 @@ public class User {
 	}
 
 	public String getUsername() {
-		// TODO Auto-generated method stub
 		return username;
 	}
 	

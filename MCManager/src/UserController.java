@@ -2,13 +2,15 @@
 public class UserController {
 	
 	private User u;
+        private boolean loggedIn;
 	
 	public UserController() {
 		u = null;
+                loggedIn = false;
 		
 	}
 
-	public void createUser(String username, String password) {
+	public void createUser(String username, char[] password) {
 		u = new User(username, password);
 	}
 	
